@@ -1,0 +1,3 @@
+### GET restaurant and food item by id
+GET {{host}}/foodCatalogue/fetchRestaurantAndFoodItemsById/1153
+Accept: application/json

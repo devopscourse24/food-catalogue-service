@@ -1,0 +1,14 @@
+### Add Food Item
+POST {{host}}/foodCatalogue/addFoodItem
+Content-Type: application/json
+Accept: application/json
+
+{
+  "itemName": "Poulet Kedjenou",
+  "itemDescription": "Poulet mijoté avec des légumes dans une sauce tomate épicée",
+  "veg": false,
+  "price": 4500,
+  "restaurantId": 1002,
+  "quantity": 10
+}
+

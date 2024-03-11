@@ -1,0 +1,17 @@
+server:
+  port: 9093
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: FOOD-CATALOGUE-SERVICE  # Nom de l'application Spring Boot utilisé principalement pour Eureka ou le cloud Spring.
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Classe du pilote JDBC pour MySQL.
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Stratégie de gestion du schéma de base de données (ici, mise à jour sans détruire les données).
+    show-sql: true  # Si true, Hibernate affiche les requêtes SQL dans les logs.
+    database-platform: org.hibernate.dialect.MySQL8Dialect  # Dialecte spécifique pour MySQL avec moteur InnoDB.
