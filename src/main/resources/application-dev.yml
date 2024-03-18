@@ -3,6 +3,7 @@ eureka:
     service-url:
       # Cette configuration spécifie l'URL que les clients Eureka utiliseront pour s'enregistrer et localiser les services.
       defaultZone: http://eureka-0.eureka-service.default.svc.cluster.local:8761/eureka
+#      defaultZone: http://localhost:8761/eureka
   instance:
     # Indique à Eureka de préférer l'adresse IP de l'instance lors de l'enregistrement plutôt que son nom d'hôte.
     prefer-ip-address: true
@@ -13,7 +14,7 @@ eureka:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/fooditemdb  # URL de connexion JDBC pour la base de données MySQL.
-    # AWS RDS Url: admin.c1ykoeyyew62.us-east-2.rds.amazonaws.com:3306/fooditemdb
+    # AWS RDS Url: mysql-db.cpumcqsay9vt.us-east-2.rds.amazonaws.com:3306/fooditemdb
     password: root  # Mot de passe pour la base de données.
     username:   # Nom d'utilisateur pour la connexion à la base de données.
     driver-class-name: com.mysql.cj.jdbc.Driver  # Classe du pilote JDBC pour MySQL.
